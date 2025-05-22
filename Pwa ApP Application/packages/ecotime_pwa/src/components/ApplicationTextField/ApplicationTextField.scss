@@ -1,0 +1,61 @@
+.styledTextField {
+	.MuiInputBase-root {
+		color: var(--primaryColor);
+		font-size: var(--textFieldValueFontSize);
+	}
+	.MuiOutlinedInput-root {
+		fieldset {
+			border-width: var(--borderWidth);
+			border-radius: var(--borderRadius);
+			border-color: var(--disabledColor);
+		}
+		&:hover {
+			fieldset {
+				border-color: var(--disabledColor);
+			}
+		}
+		&.Mui-disabled {
+			.MuiOutlinedInput-notchedOutline {
+				border-color: var(--disabledTextFieldColor);
+			}
+		}
+		&.Mui-error {
+			fieldset {
+				border-color: var(--errorColor);
+			}
+		}
+		&.Mui-focused {
+			.MuiOutlinedInput-notchedOutline {
+				border-color: var(--activeColor);
+			}
+		}
+	}
+	.MuiInputLabel-root {
+		color: var(--primaryColor);
+		font-family: var(--fontInter);
+		font-size: var(--textFieldValueFontSize);
+		&.Mui-focused {
+			color: var(--activeColor);
+		}
+		&.Mui-disabled {
+			color: var(--disabledTextFieldColor);
+		}
+	}
+	.css-1wc848c-MuiFormHelperText-root {
+		&.Mui-error {
+			font-family: var(--fontInter);
+			font-weight: var(--errorTextFontWeight);
+		}
+	}
+	.css-v7esy {
+		&.Mui-error {
+			font-family: var(--fontInter);
+			font-weight: var(--errorTextFontWeight);
+		}
+	}
+	.MuiInputBase-input {
+		&.Mui-disabled {
+			-webkit-text-fill-color: var(--disabledTextFieldColor);
+		}
+	}
+}

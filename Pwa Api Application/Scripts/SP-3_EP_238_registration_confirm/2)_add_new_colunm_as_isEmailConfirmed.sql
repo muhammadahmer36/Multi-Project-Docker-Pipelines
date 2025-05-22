@@ -1,0 +1,3 @@
+ALTER TABLE UserAccounts
+ADD IsEmailConfirmed BIT NOT NULL DEFAULT(0)
+,RegistrationCode NVARCHAR(25) NOT NULL DEFAULT('')

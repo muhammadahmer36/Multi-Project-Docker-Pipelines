@@ -1,0 +1,46 @@
+.tags {
+    .heading {
+        color: var(--primaryColor);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .tagItem {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 36px;
+        border-radius: 30px;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filledChip {
+        @extend .tagItem;
+        background-color: var(--primaryColor);
+        color: white;
+        height: 38px;
+        font-weight: 700;
+        opacity: 1;
+    }
+
+    .unfilledChip {
+        @extend .tagItem;
+        border: 2px solid var(--primaryColor);
+        color: var(--primaryColor);
+        font-weight: 500;
+    }
+
+    .tagContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    padding-bottom: 14px;
+}

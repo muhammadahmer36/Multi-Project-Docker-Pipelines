@@ -1,0 +1,43 @@
+@import 'src/pages/TimeOffList/DeleteDialogBox/DeleteDialogBox.module.scss';
+
+$cancelButtonHeight :42px;
+
+
+.dialogBodyContainer {
+    @extend .dialogBodyContainer
+}
+
+.dialogHeaderContainer {
+    @extend .dialogHeaderContainer
+}
+
+.dialogBody {
+    margin: 15px !important
+}
+
+.actionButtonContainer {
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 0px !important;
+
+    @extend .actionButton;
+    @extend .cancelButton;
+ 
+    .actionButton {
+        @extend .dialogButtons;
+        border-color: var(--primaryColor) !important;
+        background-color: var(--primaryColor);
+        margin-bottom: 8px;
+        margin-right: 8px;
+
+        &:hover {
+            background-color: var(--primaryColor);
+            border: $outlinedButtonBorder;
+        }
+
+        &:active {
+            background-color: var(--primaryColor);
+        }
+
+    }
+}

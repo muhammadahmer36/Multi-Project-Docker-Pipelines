@@ -1,0 +1,34 @@
+.mainContainer {
+    .itemColor {
+        color: var(--primaryColor);
+    }
+
+    .reviewStatusKey {
+        @extend .itemColor;
+        @extend .marginBetweenItem;
+        padding-left: 30px;
+    }
+
+    .approved {
+        color: var(--paper);
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+    .marginBetweenItem {
+        margin-top: 4px
+    }
+
+    .reviewStatusValue {
+        @extend .itemColor;
+    }
+
+    .typographyHeading {
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .typographyValue {
+        margin-right: 8px;
+    }
+}

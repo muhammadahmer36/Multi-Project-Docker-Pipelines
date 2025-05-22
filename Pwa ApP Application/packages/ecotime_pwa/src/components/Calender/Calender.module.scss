@@ -1,0 +1,10 @@
+.calendarStyle {
+    :global {
+        .MuiPaper-root.MuiPickersPopper-paper {
+            @media (max-width: 600px) {
+                width: 92.5vw !important;
+                /* Apply the width for mobile */
+            }
+        }
+    }
+}

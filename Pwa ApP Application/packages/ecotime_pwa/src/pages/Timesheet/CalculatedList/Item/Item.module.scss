@@ -1,0 +1,97 @@
+
+$paddingVertical: 8px;
+$borderSize: 2px;
+$paddingHorizontal: 15px;
+$cellHeight: 52px;
+
+
+
+.itemFont {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    color: var(--primaryColor);
+    @extend .itemFont;
+
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    min-height: $cellHeight;
+    padding-left: $paddingHorizontal;
+    padding-top: $paddingVertical;
+    padding-bottom: $paddingVertical;
+    color: var(--primaryColor);
+    @extend .itemFont;
+
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    min-height: $cellHeight;
+    color: var( --primaryColor);
+    padding-top: $paddingVertical;
+    padding-bottom: $paddingVertical;
+    @extend .itemFont;
+    
+}
+
+.lastRow {
+    border-bottom:  $borderSize solid var(--primaryColor);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.detailContainer {
+    border-bottom: $borderSize solid rgba(14, 64, 74, 0.12); 
+
+}
+
+.container {
+    border-right: $borderSize solid var(--primaryColor);
+    border-left: $borderSize solid var(--primaryColor);
+    
+}
+
+.expandMoreExpandLessIconColor {
+    color:var(--primaryColor);
+}
+
+.warningAmberIcon{
+    color: $warningColor;
+    align-self: center;
+}
+
+.border {
+    min-height: 2px;
+    background-color: rgba(14, 64, 74, 0.12);
+    width: 90%;
+}
+
+.noDataFound {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    color: var(--primaryColor);
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-style: italic;
+  }

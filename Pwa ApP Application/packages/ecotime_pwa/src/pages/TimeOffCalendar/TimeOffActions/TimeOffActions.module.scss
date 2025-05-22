@@ -1,0 +1,21 @@
+.floatingContainer {
+    border: 2px solid var(--paper);
+    border-radius: 7px;
+    position: fixed;
+    box-shadow: $boxShadowTimeOffActionButtons;
+    bottom: 74px;
+    height: 38px;
+    background-color: var(--paper);
+
+    .iconPadding {
+        padding: 0px;
+        margin-top: 5px;
+    }
+}
+
+.centerFloatingActions {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}

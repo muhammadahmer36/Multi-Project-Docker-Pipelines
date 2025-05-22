@@ -1,0 +1,26 @@
+$color: #FFFF;
+$paddingLeft: 20px;
+
+.mainContainer {
+    background-color: var(--primaryColor);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: $color;
+    font-size: 18px;
+    min-height: 50.45px;
+}
+
+.dateLabel {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    justify-content: flex-start;
+    padding-left: $paddingLeft;
+}
+
+.totalDays {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}

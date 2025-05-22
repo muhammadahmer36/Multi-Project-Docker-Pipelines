@@ -1,0 +1,30 @@
+trigger:
+  branches:
+    include:
+    - master  # Trigger the pipeline on changes to the master branch
+
+pool:
+  vmImage: ubuntu-latest  # Use the Ubuntu build agent
+
+stages:
+- stage: Build
+  jobs:
+  - job: Build
+    steps:
+     # Step 1: Build the Docker image and tag it with the unique build number
+     - task: Docker@2
+       inputs:
+         containerRegistry: 'dockerhub_personal-SampleDotNet6'
+         repository: 'muhammadahmer36/sampledotnet6'
+         command: 'build'
+         Dockerfile: 'Dockerfile'
+         tags: 'sampledotnet6_$(Build.BuildNumber)'
+
+     # Step 2: Push the Docker image to Docker Hub with the unique tag
+     - task: Docker@2
+       inputs:
+         containerRegistry: 'dockerhub_personal-SampleDotNet6'
+         repository: 'muhammadahmer36/sampledotnet6'
+         command: 'push'
+         tags: 'sampledotnet6_$(Build.BuildNumber)'
+

@@ -1,0 +1,48 @@
+:root {
+  --primaryColor: #0E404A;
+  --disabledColor: #3E666E;
+  --bottomNavColor: #869fa4;
+  --disabledTextFieldColor: #9EB2B6;
+  --activeColor: #93C840;
+  --backDropColor: #9cff01;
+  --errorColor: #D32F2F;
+  --paper: #fff;
+  --scrollBarColor: #979797;
+  --avatarBackGroundColor: '#D9D9D9';
+  --fontInter: 'Inter';
+  --textTransform: 'capitalize';
+  --borderWidth: 2px;
+  --borderRadius: 7px;
+  --linkCursor: 'default';
+  --btnHeight: 55px;
+  --btnFontWeight: 700;
+  --errorTextFontWeight: 500;
+  --btnFontSize: 18px;
+  --textFieldValueFontSize: 18px;
+  --paddingAcrossBtnLink: 0px;
+  --lineHeightAcrossBtnLink: 1.44;
+
+  --boxShadowDashboardButton: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+  --borderDashboardButton: 2px solid rgba(14, 64, 74, 0.10);
+  --fontSizeDashboardButton: 16px;
+
+}
+
+// rest color will be define like this
+$warningColor: #ED6C02;
+$successColor: #93C840;
+$errorColor: #D32F2F;
+$snackBarColor: #ffff;
+$hoverColor: #eff7e3;
+$dividerColor: #b4c4c4;
+$avatarBackGroundColorForEvenRow :#F1EDCC;
+$avatarBackGroundColorForOddRow : #C6EEF6;
+$disabledIconColor: rgba(0, 0, 0, 0.26);
+$disabledIconBackGroundColor: rgba(0, 0, 0, 0.12);
+$calendarPreviousDateColor : rgba(14, 64, 74, 0.54);
+$gridBorderColor :2px solid rgba(14, 64, 74, 0.8);
+$borderGridThinerLine: 1px solid rgba(14, 64, 74, 0.12);
+$borderGridThickerLine: 1px solid rgba(14, 64, 74, 0.6);
+$boxShadowTimeOffActionButtons: 10px 10px 10px 10px rgba(0, 0, 0, 0.08);
+$expandedItemBorderColor :#b2c2c5;
+$outlinedButtonBorder :2px solid rgba(14, 64, 74, 0.8);

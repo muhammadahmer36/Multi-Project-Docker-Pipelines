@@ -1,0 +1,31 @@
+.et2 .colorPrimary {
+    color: var(--primaryColor);
+}
+
+.et2 .colorDisable {
+    color: var(--disabledColor);
+}
+
+.et2 .colorActive {
+    color: var(--activeColor);
+}
+
+.et2 .colorBackDrop {
+    color: var(--backDropColor);
+}
+
+.et2 .errorColor {
+    color: var(--errorColor);
+}
+
+.et2 .paperColor {
+    color: var(--paper);
+}
+
+.et2 .whiteBackGround {
+    background-color: var(--paper);
+}
+
+.et2 .primaryBackGround {
+    background-color: var(--activeColor) !important;
+}

@@ -1,0 +1,9 @@
+export const activeColor = '#93C840';
+export const white = '#FFFFFF';
+export const primaryColor = '#0E404A';
+export const hoverColor = '#eff7e3';
+export const lightPrimaryColor = '#0e404ab3';
+export const paperColor = '#fff';
+export const primaryBorderColor = 'rgba(14, 64, 74, 0.15)';
+export const primaryColorOpacityEighty = 'rgba(14, 64, 74, 0.8)';
+export const dropDownMultiSelectColor = 'rgba(147, 200, 64, 0.2)';

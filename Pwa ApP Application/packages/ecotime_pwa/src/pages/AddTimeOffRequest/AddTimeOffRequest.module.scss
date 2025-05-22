@@ -1,0 +1,23 @@
+.addTimeOffStep1 {
+    .form {
+        max-width: 448px;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .spaceBetweenFields {
+        margin-top: 12px;
+    }
+
+    .footer {
+        display: flex;
+        max-width: 448px;
+        padding-top: 25px;
+        position: fixed;
+        width: 91%;
+        bottom: 71px;
+        margin: 0 auto;
+    }
+
+}

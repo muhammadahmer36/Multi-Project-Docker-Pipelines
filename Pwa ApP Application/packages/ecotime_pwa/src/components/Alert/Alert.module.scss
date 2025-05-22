@@ -1,0 +1,41 @@
+$alertColor: #FFFFFF;
+
+.alert {
+  color: $alertColor !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+  .closeIcon {
+    color: $alertColor !important;
+  }
+
+  .error {
+    @extend .alert;
+    background-color: $errorColor !important;
+  }
+
+  .warning {
+    @extend .alert;
+    background-color: $warningColor !important;
+  }
+
+  .success {
+    @extend .alert;
+    background-color: $successColor !important;
+  }
+
+.warningAmberIcon{
+    color: $alertColor;
+    align-self: center;
+}
+
+.checkCircleIcon {
+    color: $alertColor;
+    align-self: center;
+
+}
+.errorIcon {
+    color: $alertColor;
+    align-self: center;
+}

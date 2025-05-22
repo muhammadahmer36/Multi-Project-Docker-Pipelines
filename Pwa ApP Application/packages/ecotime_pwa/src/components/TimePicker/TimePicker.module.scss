@@ -1,0 +1,17 @@
+.timePicker {
+  :global {
+    & .MuiMultiSectionDigitalClockSection-item.Mui-selected {
+      background-color: var(--activeColor) !important;
+    }
+
+    & .MuiPickersPopper-paper {
+      color: var(--primaryColor);
+    }
+
+    & .MuiButton-root {
+      color: var(--paper);
+      border: 2px solid dotted;
+      background-color: var(--activeColor);
+    }
+  }
+}

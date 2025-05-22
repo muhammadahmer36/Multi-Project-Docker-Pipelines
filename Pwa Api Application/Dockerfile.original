@@ -1,0 +1,76 @@
+# FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine as build
+# WORKDIR /app
+# COPY . . 
+# RUN dotnet restore
+# RUN dotnet publish -o /app/published-app
+
+# FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine as runtime
+# WORKDIR /app
+# COPY --from=build /app/published-app /app
+
+# ENV ASPNETCORE_URLS=http://+:80   
+# EXPOSE 80                        
+# ENTRYPOINT ["dotnet", "/app/EcotimeMobileAPI.dll"]
+
+
+# FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine as build
+# WORKDIR /app
+# COPY . .
+# RUN apk add --no-cache icu-libs
+# ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
+# RUN dotnet restore
+# RUN dotnet publish -c Release -o out
+
+# # Final stage
+# FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine
+# WORKDIR /app
+# COPY --from=build /app/out .
+
+# # # Ensure keys are stored in a persistent volume
+# # VOLUME ["/root/.aspnet/DataProtection-Keys"]
+
+# ENTRYPOINT ["dotnet", "EcotimeMobileAPI.dll"]
+
+
+#with more additional publish command 
+
+# Set a .NET version argument for flexibility
+ARG VERSION=6.0-alpine
+
+# Stage 1: Build the application
+FROM mcr.microsoft.com/dotnet/sdk:$VERSION AS build-env
+
+WORKDIR /app
+
+# Copy source files and restore dependencies
+COPY . .
+RUN dotnet restore
+
+# Publish the application (self-contained, Alpine runtime, single file, ready-to-run)
+RUN dotnet publish -c Release -o /app/output \
+    --self-contained true \
+    -r alpine-x64 \
+    /p:PublishReadyToRun=true \
+    /p:PublishSingleFile=true
+
+# Stage 2: Create a minimal runtime image
+FROM mcr.microsoft.com/dotnet/runtime-deps:$VERSION
+
+# Install necessary libraries and packages for Alpine
+RUN apk add --no-cache icu-libs krb5-libs libgcc libintl libstdc++ zlib libssl3 \
+    && apk add --no-cache libgdiplus --repository https://dl-cdn.alpinelinux.org/alpine/v3.17/community/ \
+    && apk add --no-cache font-noto-cjk font-terminus font-noto font-misc-misc font-ipa font-jis-misc fontconfig \
+    && fc-cache -f -v
+
+# Set application directory and add application files from the build stage
+ENV APP_DIR="/app"
+WORKDIR $APP_DIR
+COPY --from=build-env /app/output .
+
+# Expose the desired port and set app to run as a non-root user
+EXPOSE 8081
+ENV ASPNETCORE_URLS=http://+:8081
+USER nobody
+
+# Set entry point
+ENTRYPOINT ["./EcotimeMobileAPI"]

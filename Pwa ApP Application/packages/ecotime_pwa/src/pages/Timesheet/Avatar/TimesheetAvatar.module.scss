@@ -1,0 +1,27 @@
+
+.avatar {
+    width: 40px !important;
+    height: 40px !important;
+    color: var(--primaryColor) !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    margin-right: 10px !important;
+  }
+
+  .greetingBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .greetingMessage {
+    font-size: 20px;
+    color: var(--primaryColor);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .iconColor {
+    color: var(--primaryColor);
+
+  }

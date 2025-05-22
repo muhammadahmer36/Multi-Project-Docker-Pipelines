@@ -1,0 +1,19 @@
+.radioButton {
+    .checkBoxLabel {
+        font-weight: 500;
+        color: var(--primaryColor);
+        font-size: 16px;
+        font-style: normal;
+        font-family: var(--fontInter);
+    }
+
+    .fillCheckBoxColor {
+        &:global(.Mui-checked) {
+            color: var(--primaryColor) !important;
+        }
+    }
+
+    .errorColor {
+        color: var(--errorColor);
+    }
+}

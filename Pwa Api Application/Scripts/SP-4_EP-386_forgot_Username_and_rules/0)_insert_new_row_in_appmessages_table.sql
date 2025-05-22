@@ -1,0 +1,2 @@
+INSERT INTO AppMessages ([ID], [Title], [Description], [ModifiedBy], [ModifiedOn]) 
+VALUES (43, 'Your username has been sent over to {0}. Please login with the correct username here.', 'Forget Username','SHAHZHOB', GETDATE())

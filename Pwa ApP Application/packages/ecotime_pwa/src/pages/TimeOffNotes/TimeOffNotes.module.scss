@@ -1,0 +1,16 @@
+.container {
+
+    .addNoteIconBackGround {
+        height: 40px;
+        width: 40px;
+        background-color: var(--primaryColor);
+        border-radius: 50%;
+    }
+
+    .addNoteIcon {
+        color: var(--paper);
+        margin-top: 7px;
+        width: 26px;
+        height: 26px;
+    }
+}

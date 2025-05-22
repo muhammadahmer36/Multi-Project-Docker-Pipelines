@@ -1,0 +1,26 @@
+$color: #FFFF;
+$paddingLeft: 20px;
+$borderSize: 2px;
+$borderRadius: 2px;
+
+.hours {
+    margin-left: 5px;;
+}
+
+.mainContainer {
+    background-color: var(--primaryColor);
+    color: $color;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: 50px;
+    border-top-left-radius: $borderRadius;
+    border-top-right-radius: $borderRadius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+

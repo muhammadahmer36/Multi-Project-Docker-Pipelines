@@ -1,0 +1,78 @@
+@import 'src/components/ApplicationButton/Button.module.scss';
+$borderSize: 2px;
+
+.list {
+  .sectionHeading {
+    text-align: center;
+    font-family: var(--fontInter);
+    font-weight: 700;
+    font-size: 20px;
+    height: 59px;
+    color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    display: flex;
+    font-family: var(--fontInter);
+    font-size: 18px;
+    font-weight: 700;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--primaryColor);
+    color: var(--paper);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--paper);
+    color: var(--primaryColor);
+    width: 100%;
+    padding: 0;
+    height: 52px;
+    font-family: var(--fontInter);
+    font-size: 16px;
+    text-transform: none !important;
+
+    &:last-child {
+      border-radius: 5px
+    }
+
+    &:not(:last-child) {
+      border-bottom: $borderSize solid rgba(14, 64, 74, 0.12);
+      border-radius: 0px;
+
+    }
+  }
+
+  .content:active {
+    background-color: var(--activeColor) !important;
+    color: var(--paper);
+  }
+
+  .loaderBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+  }
+}
+
+.noDataFound {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primaryColor);
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-style: italic;
+}

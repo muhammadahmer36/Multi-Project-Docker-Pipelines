@@ -1,0 +1,69 @@
+$cancelButtonHeight :42px;
+$cancelButtonFontWeight :400;
+$actionButtonsFontSize :16px;
+
+.dialogHeaderContainer {
+    .dialogHeadingClass {
+        font-weight: 700;
+        color: var(--primaryColor);
+        font-size: 18px;
+    }
+}
+
+.dialogBody {
+    margin: 15px !important;
+    width: 392px !important;
+}
+
+.actionButtonContainer {
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 0px !important;
+
+    .dialogButtons {
+        height: $cancelButtonHeight;
+        text-transform: var(--textTransform);
+        font-family: var(--fontInter);
+        border-radius: var(--borderRadius);
+    }
+
+    .cancelButton {
+        @extend .dialogButtons;
+        border-color: var(--primaryColor);
+        color: var(--primaryColor);
+        font-weight: $cancelButtonFontWeight;
+        font-size: $actionButtonsFontSize;
+        border: $outlinedButtonBorder;
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-right: 10px;
+
+        &:hover {
+            border: $outlinedButtonBorder;
+        }
+    }
+
+    .saveButton {
+        margin-right: 8px;
+        height: $cancelButtonHeight;
+        text-transform: var(--textTransform);
+        font-family: var(--fontInter);
+        font-size: $actionButtonsFontSize;
+        font-weight: var(--btnFontWeight);
+        border-radius: var(--borderRadius);
+        background-color: var(--primaryColor);
+
+        &:hover {
+            background-color: var(--primaryColor);
+        }
+
+        &:active {
+            background-color: var(--activeColor);
+        }
+
+        &:global(.Mui-disabled) {
+            color: var(--paper);
+            background-color: var(--disabledColor);
+        }
+    }
+}

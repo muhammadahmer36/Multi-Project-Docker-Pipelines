@@ -1,0 +1,118 @@
+@import 'src/components/ApplicationButton/Button.module.scss';
+ 
+.registerButton {
+    .container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: calc(100vh - 75px);
+    }
+ 
+    .containerBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 448px;
+        top: calc(55% - 463px);
+        height: 926px;
+    }
+ 
+    .heading {
+        position: absolute;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--primaryColor);
+        top: 31%;
+    }
+ 
+    .image {
+        top: calc(50% - 296px);
+    }
+ 
+    .loaderAndFootrBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+ 
+    .spaceBetweenTextField {
+        margin-top: 1rem;
+    }
+ 
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.7rem;
+    }
+ 
+    .backArrowButtonBox {
+        display: flex;
+        justify-content: center;
+    }
+ 
+    .errorText {
+        color: var(--errorColor);
+        font-weight: 500;
+        font-size: 1rem;
+    }
+ 
+    .backArrowBox {
+        padding: 4px 4px 0;
+        width: 380px;
+    }
+ 
+    .iconButton {
+        color: var(--primaryColor);
+    }
+ 
+    .backArrow {
+        margin-left: 8px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+ 
+    .formBox {
+        max-width: 350px;
+        padding-right: 1%;
+        padding-left: 1%;
+        position: absolute;
+        width: 100%;
+        top: 36%;
+        @media screen and (max-width: 350px) {
+            width: 58%;
+        }
+    }
+ 
+    .loginLinkBox {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 96%;
+    }
+ 
+    .loginText {
+        color: var(--primaryColor);
+        font-size: 18px;
+        font-weight: 400;
+    }
+ 
+    .bottomLink {
+        color: var(--activeColor);
+        font-weight: 400;
+        padding-left: 4px;
+        margin-bottom: 1px;
+        font-size: 18px;
+ 
+    }
+ 
+    .nextButton {
+        @extend .button;
+    }
+}

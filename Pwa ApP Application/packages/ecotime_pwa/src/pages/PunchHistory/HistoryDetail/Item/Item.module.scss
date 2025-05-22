@@ -1,0 +1,75 @@
+$paddingVertical: 8px;
+$borderSize: 2px;
+$paddingHorizontal: 20px;
+$cellHeight: 52px;
+
+.itemFont {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    min-height: $cellHeight;
+    color: var(--primaryColor);
+    @extend .itemFont;
+
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    padding-left: $paddingHorizontal;
+    color: var(--primaryColor);
+    @extend .itemFont;
+
+}
+
+.label1 {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    color: var(--primaryColor);
+    @extend .itemFont;
+
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: $cellHeight;
+    padding-left: $paddingHorizontal;
+    color: var(--primaryColor);
+    @extend .itemFont;
+
+}
+
+.lastRow {
+    border-bottom:  $borderSize solid var(--primaryColor);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.mainContainer {
+    border-bottom: $borderSize solid rgba(14, 64, 74, 0.12);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.container {
+    border-right: $borderSize solid var(--primaryColor);
+    border-left: $borderSize solid var(--primaryColor);
+}
+
+.expandMoreExpandLessIconColor {
+    color: var(--primaryColor);
+}
+
+.expandedItemSeprator {
+    border-bottom: $borderSize solid rgba(14, 64, 74, 0.12);
+
+}

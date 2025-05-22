@@ -1,0 +1,49 @@
+.styledDateCalendarLayout {
+    :global {
+        & .MuiDayCalendar-weekDayLabel {
+            color: var(--primaryColor);
+        }
+
+        & .MuiPickersYear-yearButton.Mui-selected {
+            background-color: var(--activeColor) !important;
+        }
+
+        & .MuiPickersMonth-monthButton.Mui-selected {
+            background-color: var(--activeColor) !important;
+        }
+
+        & .MuiPickersYear-yearButton:not(.Mui-selected) {
+            color: var(--primaryColor);
+        }
+
+        & .MuiPickersMonth-monthButton:not(.Mui-selected) {
+            color: var(--primaryColor);
+        }
+
+        & .MuiPickersDay-dayOutsideMonth {
+            color: $calendarPreviousDateColor;
+        }
+
+        & .MuiPickersDay-root:not(.MuiPickersDay-dayOutsideMonth).MuiPickersDay-dayWithMargin {
+            color: var(--primaryColor);
+        }
+
+        & .MuiPickersDay-root.Mui-selected.MuiPickersDay-dayWithMargin {
+            color: var(--paper);
+        }
+    }
+
+    .styledDateCalendarDay {
+        :global {
+            & .MuiPickersDay-root.Mui-selected {
+                background-color: var(--activeColor);
+            }
+
+            & .MuiPickersDay-today:not(.Mui-selected) {
+                border: 1px solid var(--primaryColor);
+            }
+        }
+    }
+
+}
+

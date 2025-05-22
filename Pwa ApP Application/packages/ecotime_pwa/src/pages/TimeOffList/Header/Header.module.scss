@@ -1,0 +1,36 @@
+$color: #FFFF;
+$paddingLeft: 20px;
+$fontWeight: 700;
+$fontSize: 18px;
+
+.mainContainer {
+    background-color: var(--primaryColor);
+    color: $color !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    min-height: 50px;
+
+    .icon {
+        color: $color;
+    }
+    
+    .marginFromLeft {
+        margin-left: 6px;
+    }
+    
+    .heading {
+        font-weight: $fontWeight;
+        font-size: $fontSize;
+        margin-left: -13px;
+        margin-top: 3px;
+    }
+    
+    .fillCheckBoxColor {
+        color: var(--paperColor);
+        margin-right: 0px;
+        &:global(.Mui-checked) {
+            color: var(--paperColor);
+        }
+    }
+}
+

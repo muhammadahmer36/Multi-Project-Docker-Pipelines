@@ -1,0 +1,31 @@
+
+$borderSize: 2px;
+
+  .noDataFound {
+    width: 100%;
+    font-size: 16px;
+    color: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .headerContainer {
+    width: 100%;
+  }
+
+  .noDataFoundContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }

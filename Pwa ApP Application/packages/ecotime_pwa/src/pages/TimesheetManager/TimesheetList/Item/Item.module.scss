@@ -1,0 +1,89 @@
+
+$paddingVertical: 9px;
+$borderSize: 2px;
+$paddingHorizontal: 10px;
+$cellHeight: 52px;
+
+
+.checkBoxContainer {
+    display: flex;
+    align-content: center;
+    padding-left: $paddingHorizontal;
+}
+
+.itemFont {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    color: var(--primaryColor);
+    @extend .itemFont;
+
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    color: var(--primaryColor);
+    @extend .itemFont;
+
+    
+}
+
+.container {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: $borderSize solid rgba(14, 64, 74, 0.12); 
+}
+
+.grid {
+    padding-bottom: $paddingVertical;
+
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    color: var( --primaryColor);
+    @extend .itemFont;
+}
+
+
+.warningAmberIcon{
+    color: $warningColor;
+    align-self: center;
+}
+
+
+.noDataFound {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    color: var(--primaryColor);
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .image {
+    height: 16px;
+    width: 16px;
+    margin-left: 8px;
+  }
+
+.statusContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse !important;
+    align-items: center;
+    padding-right: $paddingHorizontal;
+}

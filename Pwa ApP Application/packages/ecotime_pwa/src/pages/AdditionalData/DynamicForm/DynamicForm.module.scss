@@ -1,0 +1,36 @@
+@import 'src/components/ApplicationButton/Button.module.scss';
+
+.formBox {
+    max-width: 448px;
+    margin: 0 auto;
+    padding-bottom: 7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .submitButton {
+        @extend .button;
+    }
+
+    .cancelButton {
+        @extend .outlinedButton;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .container {
+        display: flex;
+        max-width: 448px;
+        padding-top: 2px;
+        position: fixed;
+        width: 91%;
+        bottom: 71px;
+        margin: 0 auto;
+        background-color: var(--paper);
+        z-index: 1;
+    }
+
+}
+
+.spaceBetweenFields {
+    margin-top: 16px;
+}

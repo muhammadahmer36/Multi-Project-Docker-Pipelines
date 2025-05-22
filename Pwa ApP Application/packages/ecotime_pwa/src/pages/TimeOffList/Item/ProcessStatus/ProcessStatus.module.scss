@@ -1,0 +1,45 @@
+.mainContainer {
+    .itemColor {
+        color: var(--primaryColor);
+    }
+
+    .marginAtLastGrid {
+        margin-bottom: 10px;
+    }
+
+    .marginBetweenGrids {
+        margin-top: 6px;
+    }
+
+    .processStatusKey {
+        @extend .itemColor;
+        @extend .marginBetweenItem;
+        padding-left: 30px;
+    }
+
+    .typographyHeading {
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .typographyValue {
+        font-weight: 400;
+        font-size: 16px;
+        margin-right: 8px;
+    }
+
+    .processStatusValue {
+        @extend .itemColor;
+        @extend .marginBetweenItem;
+    }
+
+    .marginBetweenItem {
+        margin-top: 4px
+    }
+
+    .reviewStatusKey {
+        @extend .itemColor;
+        @extend .marginBetweenItem;
+        padding-left: 50px;
+    }
+}

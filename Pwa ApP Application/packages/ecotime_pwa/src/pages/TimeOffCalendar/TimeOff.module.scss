@@ -1,0 +1,82 @@
+$borderSize: 7px;
+
+.timeOff {
+    padding-bottom: 3rem;
+
+    .calendarStyle {
+
+        margin-top: -6px;
+        max-height: 310px;
+
+        @media (max-width: 330px) {
+            width: 258px !important;
+        }
+
+        :global {
+            & .MuiPickersDay-root {
+                height: 34px;
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+
+        .styledBadge {
+            :global {
+                & .MuiBadge-badge {
+                    right: 49%;
+                    padding: 0px;
+                }
+            }
+
+            .styledBadgeContentIcon {
+                width: 5px;
+                height: 4px;
+                margin-top: 12px;
+                padding: 0px;
+            }
+        }
+    }
+}
+
+.noTimeOffRequest {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 92%;
+    font-size: 14px;
+    padding-left: 13px;
+    color: var(--paper);
+    background-color: var(--disabledColor);
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border: 2px solid var(--disabledColor);
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.borderBox {
+    border: 2px solid var(--primaryColor);
+    border-radius: 7px;
+    margin-left: 17px;
+    margin-top: 5px;
+    margin-right: 17px;
+    height: calc(100vh - 130px);
+}
+
+.divider {
+    border-color: $dividerColor;
+    padding-top: 1px;
+    width: '89%';
+}
+
+.requestHeading {
+    font-size: 14px;
+    color: var(--primaryColor);
+}
+
+.allRequestContainer {
+    max-height: '310px';
+    overflow-y: 'scroll';
+}

@@ -1,0 +1,20 @@
+$borderSize: 2px;
+
+.emptyPunchHistory {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    color: var(--primaryColor);
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 2px solid var(--primaryColor);
+    justify-content: center;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-weight: 700;
+    font-style: italic;
+  }

@@ -1,0 +1,22 @@
+$maxListHeight: 386px;
+
+.gridContainer {
+    border: 2px solid var(--primaryColor);
+    border-radius: 7px;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    max-width: 448px;
+    padding-top: 5px;
+    width: 100%;
+    bottom: 71px;
+    margin: 0 auto;
+}
+
+.listBox {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - $maxListHeight),
+}

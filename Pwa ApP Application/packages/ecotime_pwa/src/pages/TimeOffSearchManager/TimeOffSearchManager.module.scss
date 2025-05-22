@@ -1,0 +1,29 @@
+.timeOffSearch {
+    .form {
+        max-width: 448px;
+        margin: 0 auto;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        max-width: 448px;
+        padding-top: 25px;
+        position: fixed;
+        width: 91%;
+        bottom: 71px;
+        margin: 0 auto;
+        background-color: var(--paper);
+        z-index: 4;
+    }
+
+    .tagContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+}

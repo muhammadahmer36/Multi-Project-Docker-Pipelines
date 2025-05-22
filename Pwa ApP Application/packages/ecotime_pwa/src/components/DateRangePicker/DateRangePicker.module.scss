@@ -1,0 +1,64 @@
+.styledDateRangeLayout {
+    color: var(--primaryColor);
+
+    :global {
+        & .MuiButtonBase-root {
+            color: var(--primaryColor);
+        }
+
+        & .MuiDateRangePickerDay-rangeIntervalDayHighlight {
+            background-color: $hoverColor;
+        }
+
+        & .MuiPickersToolbarText-root.Mui-selected {
+            color: var(--primaryColor);
+            font-size: 34px;
+        }
+
+        & .MuiPickersToolbarText-root {
+            color: var(--primaryColor);
+            font-size: 34px;
+        }
+
+        & .MuiPickersCalendarHeader-label {
+            position: fixed;
+        }
+
+        & .MuiPickersFadeTransitionGroup-root {
+            padding-bottom: 24px;
+        }
+
+        & .css-fppytn-MuiTypography-root {
+            color: var(--primaryColor);
+            font-size: 12px;
+        }
+
+        & .MuiPickersDay-dayOutsideMonth {
+            color: $calendarPreviousDateColor;
+        }
+
+        & .MuiDayCalendar-weekDayLabel {
+            color: var(--primaryColor);
+        }
+
+        & .MuiDateRangeCalendar-root.css-e47596-MuiDateRangeCalendar-root>div:first-child,
+        & .MuiDateRangeCalendar-root.css-1xhj18k>div:first-child {
+            color: var(--paper) !important;
+            z-index: -1 !important;
+        }
+    }
+}
+
+.styledDateRangeDays {
+    color: var(--primaryColor);
+
+    :global {
+        & .MuiPickersDay-root.MuiDateRangePickerDay-day.Mui-selected {
+            background-color: var(--activeColor);
+        }
+
+        & .MuiPickersDay-today:not(.Mui-selected) {
+            border: 1px solid var(--primaryColor);
+        }
+    }
+}

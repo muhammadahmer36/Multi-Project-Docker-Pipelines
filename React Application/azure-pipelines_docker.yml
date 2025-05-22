@@ -1,0 +1,30 @@
+trigger:
+  branches:
+    include:
+    - master  # Trigger the pipeline on changes to the master branch
+
+pool:
+  vmImage: ubuntu-latest  # Use the Ubuntu build agent
+
+stages:
+- stage: Build
+  jobs:
+  - job: Build
+    steps:
+     # Step 1: Build the Docker image and tag it with the unique build number
+     - task: Docker@2
+       inputs:
+         containerRegistry: 'dockerhub_personal'  # Docker Hub service connection
+         repository: 'muhammadahmer36/samplefrontendapp'  # Docker Hub repository
+         command: 'build'
+         Dockerfile: 'dockerfile'  # Path to Dockerfile (ensure the correct case)
+         tags: 'samplefrontendapp_$(Build.BuildNumber)'  # Tag the image with the build number
+
+     # Step 2: Push the Docker image to Docker Hub with the unique tag
+     - task: Docker@2
+       inputs:
+         containerRegistry: 'dockerhub_personal'  # Docker Hub service connection
+         repository: 'muhammadahmer36/samplefrontendapp'  # Docker Hub repository
+         command: 'push'
+         tags: 'samplefrontendapp_$(Build.BuildNumber)'  # Use the same tag for push
+

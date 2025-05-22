@@ -1,0 +1,23 @@
+@import 'src/components/ApplicationButton/Button.module.scss';
+
+.container {
+    .footer {
+        display: flex;
+        max-width: 448px;
+        padding-top: 25px;
+        position: fixed;
+        width: 91%;
+        bottom: 71px;
+        margin: 0 auto;
+    }
+
+    .registrationButton {
+        @extend .button;
+    }
+
+    .cancelButton {
+        @extend .outlinedButton;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,39 @@
+$color: #FFFF;
+$paddingLeft: 20px;
+$borderSize: 2px;
+
+.mainContainer {
+    background-color: var(--primaryColor);
+    color: $color;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: 50px;
+}
+
+.container {
+    border: 2px solid var(--primaryColor);
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.icon {
+    color: $color;
+}
+
+.sortAbleIcon {
+    .LabelItem {
+        padding: 0px;
+        color: $color;
+        font-size: 18px;
+        font-family: var(--fontInter);
+    }
+}
+
+
+.dateLabel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: $color;
+    padding-left: $paddingLeft;
+}

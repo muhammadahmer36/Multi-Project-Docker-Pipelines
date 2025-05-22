@@ -1,0 +1,112 @@
+@import 'src/components/ApplicationButton/Button.module.scss';
+
+.dashboard {
+
+  padding-bottom: 5rem;
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    color: var(--primaryColor);
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .greetingBox {
+    display: flex;
+    justify-content: left;
+  }
+
+  .greetingMessage {
+    font-size: 20px;
+    color: var(--primaryColor);
+  }
+
+  .iconColor {
+    color: var(--primaryColor);
+
+  }
+
+  .widgetButtonsSize {
+    display: flex;
+    margin-right: 13px;
+    font-size: 13px;
+  }
+
+  .accordianHeading {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primaryColor);
+  }
+
+  .accordianHeight {
+    height: 54px;
+  }
+
+  .accordianDetail {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dateHeading {
+    font-weight: 500;
+    color: var(--primaryColor);
+    font-size: 16px;
+  }
+
+  .timeHeading {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--primaryColor);
+  }
+
+  .resourceButton {
+    position: absolute;
+    left: 16px;
+    height: 100%;
+  }
+
+  .resourceIconButton {
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .timeoffResource {
+    @extend .resourceButton;
+    top: 16px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 34px;
+    text-align: left;
+  }
+
+  .dashBoardButton {
+    text-transform: var(--textTransform);
+    border-radius: var(--borderRadius);
+    min-height: 60px;
+    font-weight: var(--btnFontWeight);
+    color: var(--primaryColor);
+    font-size: var(--fontSizeDashboardButton);
+    border: var(--borderDashboardButton);
+    box-shadow: var(--boxShadowDashboardButton);
+  }
+
+  .dashBoardButton:active {
+    background-color: var(--activeColor) !important;
+    color: var(--paper);
+  }
+
+  .dashBoardButton:hover {
+    background-color: var(--paper);
+    border-color: var(--paper);
+  }
+
+  .widgetsButtons {
+    @extend .button;
+  }
+
+}
+

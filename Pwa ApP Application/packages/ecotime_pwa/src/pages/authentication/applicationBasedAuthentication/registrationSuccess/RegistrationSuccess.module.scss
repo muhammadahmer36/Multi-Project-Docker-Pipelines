@@ -1,0 +1,102 @@
+@import 'src/components/ApplicationButton/Button.module.scss';
+
+.registerSuccess {
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .containerBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 448px;
+        top: calc(55% - 463px);
+        height: 926px;
+    }
+
+    .registrationImage {
+        position: absolute;
+        width: 362px;
+        overflow: hidden;
+        top: calc(50% - 296px);
+    }
+
+    .typographyBox {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+
+    .firstText {
+        position: absolute;
+        font-size: 24px;
+        font-weight: 700;
+        top: 461px;
+        color: var(--primaryColor);
+    }
+
+    .secondText {
+        position: absolute;
+        line-height: normal;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primaryColor);
+        top: 490px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.7rem;
+    }
+
+    .footerText {
+        position: absolute;
+        font-weight: 500;
+        font-size: 1rem;
+        top: 573px;
+    }
+
+    .loaderBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 80%;
+    }
+
+    .buttonBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        position: absolute;
+        top: 90%;
+
+        @media screen and (min-width: 600px) {
+            width: 448px; 
+        }
+    }
+
+    .boxWidth {
+        width: 72%;
+    }
+}
+
+.loginButton {
+    @extend .button;
+}

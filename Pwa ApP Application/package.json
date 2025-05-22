@@ -1,0 +1,9 @@
+{
+  "name": "ecotime-pwa",
+  "private": true,
+  "workspaces": {
+    "packages": ["packages/*"],
+    "nohoist": ["**"]
+
+  }
+}

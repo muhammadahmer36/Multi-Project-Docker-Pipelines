@@ -1,0 +1,28 @@
+$color: #FFFF;
+$paddingLeft: 20px;
+$borderSize: 2px;
+
+.mainContainer {
+    background-color: var(--primaryColor);
+    color: $color;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: 50px;
+    border-top: $borderSize solid var(--paper);
+}
+
+.container {
+    border-bottom: $borderSize solid var(--primaryColor);
+
+}
+
+.icon {
+    color: $color;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    padding-left: $paddingLeft;
+}
+

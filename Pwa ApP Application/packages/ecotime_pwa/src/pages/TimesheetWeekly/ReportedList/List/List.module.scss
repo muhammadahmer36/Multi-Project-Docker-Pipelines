@@ -1,0 +1,14 @@
+
+$borderSize: 2px;
+
+.noDataFound {
+    width: 100%;
+    font-size: 16px;
+    color: var(--primaryColor);
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-style: italic;
+  }

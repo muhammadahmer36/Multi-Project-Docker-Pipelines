@@ -1,0 +1,94 @@
+@import 'src/components/ApplicationButton/Button.module.scss';
+
+.confirmationCode {
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        @media screen and (max-height: 500px) {
+            height: 115vh;
+        }
+
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 448px;
+        top: calc(60% - 463px);
+        height: 926px;
+
+    }
+
+    .code {
+        position: absolute;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--primaryColor);
+        top: 285px;
+    }
+
+    .boxForm {
+        position: absolute;
+        top: 316px;
+        width: 78%;
+
+    }
+
+    .header {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--primaryColor);
+    }
+
+    .confirmButton {
+        @extend .button;
+    }
+
+    .dynamicLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loader {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5%;
+
+    }
+
+    .colorActive {
+        color: var(--activeColor);
+    }
+
+    .resendCodeMessage {
+        color: var(--primaryColor);
+        margin-right: 0.2rem;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .resendAgain {
+        color: var(--activeColor);
+        font-weight: 400;
+        margin-left: 5px;
+        margin-bottom: 2.75px;
+        font-size: 18px;
+        text-transform: none;
+        line-height: 0;
+        padding: 0px;
+    }
+
+    .logo {
+        top: calc(50% - 296px);
+    }
+}

@@ -1,0 +1,12 @@
+$paddingHorizontal: 20px;
+$paddingVertical: 8px;
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: $paddingHorizontal;
+    padding-right: $paddingHorizontal;
+    height: 52px;
+}
+

@@ -1,0 +1,1 @@
+export { GeofencingProvider } from './Provider'

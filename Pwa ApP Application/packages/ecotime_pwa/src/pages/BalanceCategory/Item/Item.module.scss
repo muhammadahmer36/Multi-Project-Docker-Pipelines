@@ -1,0 +1,14 @@
+
+$paddingHorizontal: 20px;
+$cellHeight: 52px;
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: $paddingHorizontal;
+    padding-right: $paddingHorizontal;
+    height: $cellHeight
+}
+
+

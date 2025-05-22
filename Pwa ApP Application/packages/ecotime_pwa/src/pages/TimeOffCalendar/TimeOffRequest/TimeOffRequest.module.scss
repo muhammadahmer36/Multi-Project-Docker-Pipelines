@@ -1,0 +1,33 @@
+$borderSize: 7px;
+
+.singleTimeOffRequest {
+
+    .timeOffRequest {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width: 95%;
+        font-size: 14px;
+        padding-left: 13px;
+        flex-direction: column;
+        color: var(--paper);
+        min-height: 75px;
+        display: flex;
+        text-align: left;
+        border: 2px solid;
+        border-radius: 7px;
+        font-weight: 500;
+    }
+
+    .typographyText {
+        line-height: 16.94px;
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .bottomValue {
+        margin-bottom: 5px;
+        @extend .typographyText
+    }
+}

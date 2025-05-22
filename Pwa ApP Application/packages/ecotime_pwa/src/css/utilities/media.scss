@@ -1,0 +1,25 @@
+@media screen and (max-width: 350px) {
+    .et2 .widthPer78 {
+        width: 58%;
+    }
+
+    .et2 div.flexRow p.fW400 {
+        top: 90%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .et2 .viewHeight100 {
+        height: 120vh;
+    }
+
+    .et2 .min-view-height-100vh img.topVar50 {
+        top: 10%;
+    }
+
+    .et2 .layoutFoamBox {
+        margin-top: 42px;
+    }
+
+}

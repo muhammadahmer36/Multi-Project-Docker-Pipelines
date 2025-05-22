@@ -1,0 +1,37 @@
+.button {
+    height: var(--btnHeight);
+    text-transform: var(--textTransform);
+    font-family: var(--fontInter);
+    font-size: var(--btnFontSize);
+    font-weight: var(--btnFontWeight);
+    border-radius: var(--borderRadius);
+    background-color: var(--primaryColor);
+
+    &:hover {
+        background-color: var(--primaryColor);
+    }
+
+    &:active {
+        background-color: var(--activeColor);
+    }
+
+    &:global(.Mui-disabled) {
+        color: var(--paper);
+        background-color: var(--disabledColor);
+    }
+
+}
+
+.outlinedButton {
+    height: var(--btnHeight);
+    text-transform: var(--textTransform);
+    font-family: var(--fontInter);
+    border-radius: var(--borderRadius);
+    border-color: var(--primaryColor);
+    color: var(--primaryColor);
+    border: $outlinedButtonBorder;
+
+    &:hover {
+        border: $outlinedButtonBorder;
+    }
+}

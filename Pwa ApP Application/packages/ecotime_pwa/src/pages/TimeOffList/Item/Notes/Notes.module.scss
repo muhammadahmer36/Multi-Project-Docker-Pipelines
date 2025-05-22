@@ -1,0 +1,31 @@
+.mainContainer {
+    .itemColor {
+        color: var(--primaryColor);
+    }
+
+    .marginAtLastGrid {
+        margin-bottom: 2px;
+    }
+
+    .marginBetweenGrids {
+        margin-top: 6px;
+    }
+
+    .noteIconItem {
+        padding-left: 9px;
+    }
+
+    .noteIconBackGround {
+        height: 32px;
+        width: 32px;
+        background-color: var(--primaryColor);
+        border-radius: 50%;
+    }
+
+    .noteIcon {
+        color: var(--paper);
+        margin-top: 5px;
+        width: 22px;
+        height: 19px;
+    }
+}

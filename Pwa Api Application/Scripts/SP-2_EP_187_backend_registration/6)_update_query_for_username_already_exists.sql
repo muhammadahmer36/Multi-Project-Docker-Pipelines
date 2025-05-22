@@ -1,0 +1,1 @@
+UPDATE AppMessages SET Title = 'Username already exist.' WHERE ID = 3

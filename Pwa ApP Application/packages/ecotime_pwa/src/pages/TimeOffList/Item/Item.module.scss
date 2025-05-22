@@ -1,0 +1,136 @@
+$paddingVertical: 8px;
+$borderSize: 2px;
+$paddingHorizontal: 20px;
+$cellHeight: 52px;
+$paddingLeft: 30px;
+
+.timeOfRequestDetail {
+    .itemColor {
+        color: var(--primaryColor);
+    }
+
+    .marginBetweenGrids {
+        margin-top: 6px;
+    }
+
+    .item {
+        padding-left: 18px;
+        padding-top: 2px;
+        @extend .itemColor;
+    }
+
+    .dayKey {
+        @extend .itemColor;
+        padding-left: 18px;
+    }
+
+    .dayValue {
+        @extend .itemColor;
+    }
+
+    .payCode1Key {
+        @extend .itemColor;
+        padding-left: $paddingLeft;
+    }
+
+    .payCode1Value {
+        @extend .itemColor;
+    }
+
+    .payCode2Key {
+        @extend .itemColor;
+        padding-left: $paddingLeft;
+    }
+
+    .processStatusKey {
+        @extend .itemColor;
+        padding-left: $paddingLeft;
+    }
+
+    .processStatusValue {
+        @extend .itemColor;
+    }
+
+    .reviewStatusKey {
+        @extend .itemColor;
+        padding-left: $paddingLeft;
+    }
+
+    .chipItem {
+        @extend .itemColor;
+    }
+
+    .itemFont {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .approved {
+        color: var(--paper);
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+    .label {
+        display: flex;
+        align-items: center;
+        padding-left: $paddingHorizontal;
+        @extend .itemColor;
+        @extend .itemFont;
+    }
+
+    .durationlabel {
+        display: flex;
+        align-items: center;
+        @extend .itemColor;
+        @extend .itemFont;
+    }
+
+    .mainContainer {
+        border-bottom: $borderSize solid rgba(14, 64, 74, 0.12);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .expandMoreExpandLessIconColor {
+        color: var(--primaryColor);
+    }
+
+
+    .marginAtLastGrid {
+        margin-bottom: 10px;
+    }
+
+    .marginAtTopGrid {
+        margin-top: 6px;
+    }
+
+    .typographyHeading {
+        font-weight: 300;
+        font-size: 16px;
+        color: var(--primaryColor);
+    }
+
+    .typographyValue {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .fillCheckBoxColor {
+        color: var(--primaryColor) !important;
+        margin-right: -6px;
+        margin-left: -12px;
+
+        &:global(.Mui-checked) {
+            color: var(--primaryColor);
+        }
+    }
+
+    .checkBoxLabel {
+        font-weight: 300;
+        margin-top: 2px;
+        margin-left: -1px;
+    }
+
+}

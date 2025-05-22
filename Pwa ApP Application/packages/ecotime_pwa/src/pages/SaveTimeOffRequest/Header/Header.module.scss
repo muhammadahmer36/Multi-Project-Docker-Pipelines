@@ -1,0 +1,23 @@
+$color: #FFFF;
+$paddingLeft: 20px;
+
+.mainContainer {
+    background-color: var(--primaryColor);
+    color: $color;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: 50px;
+}
+
+.icon {
+    color: $color;
+}
+
+.dateLabel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: $paddingLeft;
+}

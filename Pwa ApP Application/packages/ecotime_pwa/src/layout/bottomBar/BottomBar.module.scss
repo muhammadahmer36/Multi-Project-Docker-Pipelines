@@ -1,0 +1,31 @@
+.bottomNavigation {
+  .positionFixed {
+    position: fixed;
+  }
+
+  .paper {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 0.18rem;
+    padding-top: 0.18rem;
+    right: 0px;
+    z-index: 100;
+  }
+
+  .justifyContentSpaceAround {
+    justify-content: space-around;
+  }
+
+  .bottomNavLabel {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--bottomNavColor);
+
+    &:global(.Mui-selected) {
+      color: var(--activeColor);
+      font-family: var(--fontInter);
+
+    }
+  }
+}

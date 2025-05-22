@@ -1,0 +1,159 @@
+@import 'src/components/ApplicationButton/Button.module.scss';
+
+.loginFoam {
+    .container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+
+        @media screen and (max-height: 500px) {
+            height: 115vh;
+        }
+    }
+
+    .containerBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 448px;
+        top: calc(55% - 463px);
+        height: 926px;
+    }
+
+    .image {
+        position: absolute;
+        width: 204px;
+        overflow: hidden;
+        top: calc(50% - 296px);
+    }
+
+    .heading {
+        position: absolute;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--primaryColor);
+        top: 285px;
+    }
+
+    .formBox {
+        position: absolute;
+        width: 78%;
+        top: 330px;
+
+        @media screen and (max-width: 350px) {
+            width: 55%;
+        }
+    }
+
+    .forgotUserNameBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 6px;
+    }
+
+    .forgotUserNameLink {
+        color: var(--primaryColor);
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 0px;
+    }
+
+    .rememberMeContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .checkBoxLabel {
+        font-weight: 500;
+        color: var(--primaryColor);
+        font-size: 16px;
+        font-style: normal;
+    }
+
+    .spaceBetweenFields {
+        margin-top: 16px;
+    }
+
+    .iconButtonStyle {
+        color: var(--primaryColor);
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.7rem;
+    }
+
+    .errorText {
+        color: var(--errorColor);
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .linkText {
+        font-size: 19px;
+        padding-left: 14px;
+        margin-bottom: 1px;
+        color: var(--primaryColor) !important;
+    }
+
+    .linkButton {
+        text-transform: var(--textTransform);
+        padding: var(--paddingAcrossBtnLink);
+        line-height: var(--lineHeightAcrossBtnLink);
+        color: var(--primaryColor);
+        font-weight: 500;
+        padding: 0px;
+        font-size: 1rem;
+    }
+
+    .linkButton:disabled {
+        color: $disabledIconColor;
+    }
+
+    .registerLinkBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 92%;
+    }
+
+    .gapBetweenTextField {
+        margin-top: 6px;
+    }
+
+    .registerText {
+        color: var(--primaryColor);
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 0.2rem;
+    }
+
+    .registerLink {
+        color: var(--activeColor);
+        font-weight: 400;
+        padding-left: 4px;
+        margin-bottom: 2px;
+        font-size: 18px;
+    }
+
+    .loginButton {
+        @extend .button;
+    }
+}
+
+.fillCheckBoxColor {
+    &:global(.Mui-checked) {
+        color: var(--primaryColor) !important;
+    }
+}

@@ -1,0 +1,30 @@
+$color: #FFFF;
+$paddingLeft: 20px;
+$borderSize: 2px;
+
+.mainContainer {
+    background-color: var(--primaryColor);
+    color: $color;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: 50px;
+    border-top: $borderSize solid var(--paper);
+    padding-top: 4px;
+}
+
+.container {
+    border-left: $gridBorderColor;
+    border-right: $gridBorderColor;
+    ;
+}
+
+.icon {
+    color: $color;
+}
+
+.dateLabel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: $paddingLeft;
+}

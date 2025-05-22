@@ -1,0 +1,61 @@
+.et2 .flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.et2 .flexRow {
+    display: flex;
+    flex-direction: row
+}
+
+.et2 .aICenter {
+    align-items: center;
+}
+
+.et2 .justify-center {
+    justify-content: center;
+}
+
+.et2 .jCLeft {
+    justify-content: left;
+}
+
+.et2 .justify-content-space-between {
+    justify-content: space-between;
+}
+
+.et2 .justify-content-space-around {
+    justify-content: space-around;
+}
+
+.et2 .justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.et2 .flex {
+    display: flex;
+}
+
+.et2 .positionRelative {
+    position: relative;
+}
+
+.et2 .positionAbsolute {
+    position: absolute;
+}
+
+.et2 .positionFixed {
+    position: fixed;
+}
+
+.et2 .overFlowHidden {
+    overflow: hidden;
+}
+
+.et2 .overFlowXHidden {
+    overflow-x: hidden;
+}
+
+.et2 .verticalAlign-middle {
+    vertical-align: middle;
+}

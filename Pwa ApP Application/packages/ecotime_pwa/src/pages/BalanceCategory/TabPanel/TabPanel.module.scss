@@ -1,0 +1,13 @@
+@import 'src/components/ApplicationButton/Button.module.scss';
+.item{
+    .heading {
+        color: var(--paper);
+    }
+    .val {
+        color: var(--primaryColor);
+    }
+}
+
+.tabContainer {
+    width: 100%;
+}

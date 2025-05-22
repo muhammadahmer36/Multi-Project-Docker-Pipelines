@@ -1,0 +1,22 @@
+.header {
+    padding-top: 15px;
+    color: var(--primaryColor);
+    text-align: center;
+    font-size: 16px;
+
+    .headerText {
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .balanceLink {
+        padding-top: 10px;
+        padding-bottom: 12px;
+        color: var(--primaryColor);
+    }
+
+    .linkNode {
+        display: flex;
+        align-items: center;
+    }
+}

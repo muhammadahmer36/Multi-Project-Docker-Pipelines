@@ -1,0 +1,33 @@
+# Use an official Node.js runtime as a parent image
+FROM node:18-alpine
+
+# Set the working directory in the container to the root
+WORKDIR /app
+
+# Copy the root-level package.json and yarn.lock to install workspace dependencies
+COPY package.json yarn.lock ./
+
+# Copy the packages directory to ensure all workspaces are available
+COPY packages ./packages
+
+# Set the working directory to the ecotime_pwa project
+WORKDIR /app/packages/ecotime_pwa
+
+# Install npm and yarn, and finally install yarn globally (this is now done in ecotime_pwa directory)
+RUN npm install && \
+    yarn install 
+    # && \
+    # npm install -g yarn --force
+
+# Build the ecotime_pwa project using the yarn workspace command
+# RUN yarn workspace ecotime_pwa build:prod
+
+WORKDIR /app
+
+# Expose the port for the app (adjust as needed)
+EXPOSE 5173
+
+# # Command to run the app in production mode
+# CMD ["yarn", "workspace", "ecotime_pwa", "production"]
+
+CMD ["yarn", "workspace", "ecotime_pwa", "vite", "--mode", "production", "--host"]

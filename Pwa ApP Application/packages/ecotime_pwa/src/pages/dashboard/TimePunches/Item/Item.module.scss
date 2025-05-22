@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px;
+}
+
+.buttonContainer {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.iconButton {
+    padding: 0;
+}
+
+.label {
+    color: var(--primaryColor);
+    font-size: 14px !important;
+}

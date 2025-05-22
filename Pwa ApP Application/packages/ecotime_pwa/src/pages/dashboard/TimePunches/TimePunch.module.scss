@@ -1,0 +1,17 @@
+.punchContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ 
+.circularProgess {
+    color: var(--activeColor) !important;  
+}

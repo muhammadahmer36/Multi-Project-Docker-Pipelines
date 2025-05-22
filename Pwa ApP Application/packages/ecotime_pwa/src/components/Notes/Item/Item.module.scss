@@ -1,0 +1,93 @@
+$paddingVertical: 8px;
+$borderSize: 1px;
+$paddingHorizontal: 18px;
+$cellHeight: 52px;
+$paddingLeft :18px;
+$fontSize :16px;
+
+.timeOfRequestNotes {
+    .itemColor {
+        color: var(--primaryColor);
+    }
+
+    .item {
+        padding-left: $paddingLeft;
+        padding-top: 2px;
+        @extend .itemColor;
+    }
+
+    .avatarColorForEvenRow {
+        background-color: $avatarBackGroundColorForEvenRow;
+    }
+
+    .avatarColorForOddRow {
+        background-color: $avatarBackGroundColorForOddRow;
+    }
+
+    .itemFont {
+        font-weight: 400;
+        font-size: $fontSize;
+    }
+
+    .avatar {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 4px;
+        padding-left: $paddingHorizontal;
+        @extend .itemColor;
+    }
+
+    .notes {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        @extend .itemColor;
+        @extend .itemFont;
+    }
+
+    .containerBottomBorder {
+        border-bottom: $borderGridThickerLine;
+    }
+
+    .noneBorder {
+        border-bottom: none
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 8px;
+        padding-bottom: 4px;
+    }
+
+    .expandMoreExpandLessIconColor {
+        color: var(--primaryColor);
+    }
+
+    .expandedItemSeprator {
+        border-bottom: $borderGridThickerLine;
+    }
+
+    .marginAtLastGrid {
+        margin-bottom: 4px;
+    }
+
+    .typographyValue {
+        @extend .itemColor;
+        font-weight: 300;
+        font-size: 13px;
+        padding-top: 0px;
+        margin-top: -14px;
+        margin-bottom: 10px;
+        margin-left: 58px;
+    }
+
+    .lastGridItem {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+}

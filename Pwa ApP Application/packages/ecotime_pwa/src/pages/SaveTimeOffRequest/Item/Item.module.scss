@@ -1,0 +1,103 @@
+$paddingVertical: 8px;
+$borderSize: 1px;
+$paddingHorizontal: 20px;
+$cellHeight: 52px;
+$paddingLeft :18px;
+$fontSize :16px;
+
+.timeOfRequestDetail {
+    .itemColor {
+        color: var(--primaryColor);
+    }
+
+    .marginBetweenGrids {
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+    .item {
+        padding-left: $paddingLeft;
+        padding-top: 2px;
+        @extend .itemColor;
+    }
+
+    .dayKey {
+        @extend .itemColor;
+        padding-left: $paddingLeft;
+    }
+
+    .dayValue {
+        @extend .itemColor;
+    }
+
+    .payCode1Key {
+        @extend .itemColor;
+    }
+
+    .payCode1Value {
+        @extend .itemColor;
+    }
+
+    .payCode2Key {
+        @extend .itemColor;
+    }
+
+    .itemFont {
+        font-weight: 400;
+        font-size: $fontSize;
+    }
+
+    .label {
+        display: flex;
+        align-items: center;
+        padding-left: $paddingHorizontal;
+        @extend .itemColor;
+        @extend .itemFont;
+    }
+
+    .durationlabel {
+        display: flex;
+        align-items: center;
+        @extend .itemColor;
+        @extend .itemFont;
+    }
+
+    .mainContainer {
+        border-bottom: $borderGridThinerLine;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .expandMoreExpandLessIconColor {
+        color: var(--primaryColor);
+    }
+
+    .expandedItemSeprator {
+        border-bottom: $borderGridThickerLine;
+    }
+
+    .marginAtLastGrid {
+        margin-bottom: 4px;
+    }
+
+    .marginAtTopGrid {
+        margin-top: 6px;
+    }
+
+    .typographyHeading {
+        font-weight: 300;
+        font-size: $fontSize;
+    }
+
+    .typographyValue {
+        font-weight: 400;
+        font-size: $fontSize;
+    }
+
+    .lastGridItem {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}

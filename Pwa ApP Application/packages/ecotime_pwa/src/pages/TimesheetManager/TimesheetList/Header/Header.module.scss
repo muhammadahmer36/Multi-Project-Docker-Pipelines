@@ -1,0 +1,39 @@
+$color: #FFFF;
+$paddingLeft: 20px;
+$borderSize: 2px;
+$borderRadius: 2px;
+$paddingVertical: 9px;
+$paddingHorizontal: 10px;
+$cellHeight: 52px;
+
+
+.checkBoxContainer {
+    display: flex;
+    align-content: center;
+    padding-left: $paddingHorizontal;
+}
+
+.hours {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.mainContainer {
+    background-color: var(--primaryColor);
+    color: $color;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: 50px;
+    border-top-left-radius: $borderRadius;
+    border-top-right-radius: $borderRadius;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+
+.checkBoxContainer{
+
+}

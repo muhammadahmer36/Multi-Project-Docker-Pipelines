@@ -1,0 +1,24 @@
+.employeeInformation {
+    padding-left: 20px;
+    padding-top: 10px;
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        color: var(--primaryColor);
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .greetingBox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .greetingMessage {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primaryColor);
+    }
+
+}

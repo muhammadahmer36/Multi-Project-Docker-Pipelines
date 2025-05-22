@@ -1,0 +1,2 @@
+INSERT INTO AppMessages ([ID], [Title], [Description], [ModifiedBy], [ModifiedOn]) 
+VALUES (32, 'Congratulations your account has been successfully registered.', 'The registration is successfull','Hamza', GETDATE())
